@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "947506254610",
+    "firebase_url": "https://news-app-cd078.firebaseio.com",
+    "project_id": "news-app-cd078",
+    "storage_bucket": "news-app-cd078.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947506254610:android:da74f016b0ae35d2f019cb",
+        "android_client_info": {
+          "package_name": "com.thedascapital.www.newsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947506254610-vqtvljgq6tmiban0967l8529eou8fqce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thedascapital.www.newsapp",
+            "certificate_hash": "12d1d7419c2b4cb3492af5c11d897bc85ab296f4"
+          }
+        },
+        {
+          "client_id": "947506254610-2s87cluhmomoakdk8ivqois3qi45dorm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thedascapital.www.newsapp",
+            "certificate_hash": "90edc2977e69a6bd3a29ede3e997ade07eb64d85"
+          }
+        },
+        {
+          "client_id": "947506254610-r0q4aqr1eddf3h77jtb8us2cb58tpuua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1VwBAyRBSf5dU2BHqQ70k_5u7TxuDvFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947506254610-r0q4aqr1eddf3h77jtb8us2cb58tpuua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
