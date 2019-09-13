@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@color/colorBackground"
+    android:id="@+id/errorLayout"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/errorImage"
+        android:src="@drawable/ic_satellite_signal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/errorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Internet Connection"
+        android:textColor="@color/colorTextTitle"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/errorImage"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please turn On Device Internet Connection"
+        android:textColor="@color/colorTextSubtitle"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-light"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/errorTitle"
+        android:gravity="center_horizontal"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/connectionRetryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:backgroundTint="@color/design_default_color_primary_dark"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/errorMessage"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
