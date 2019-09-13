@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".NewsActivity">
+    tools:context=".Activities.NewsActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/delayLayout"
@@ -63,6 +63,7 @@
         android:layout_height="match_parent"
         android:id="@+id/pager"
         />
+
 
 
 <!--    <androidx.core.widget.NestedScrollView-->

@@ -1,5 +1,7 @@
 package com.thedascapital.www.newsapp.apiutils;
 
+import com.thedascapital.www.newsapp.Models.News;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
