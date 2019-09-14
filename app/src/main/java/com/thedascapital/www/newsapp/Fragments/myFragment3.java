@@ -57,6 +57,8 @@ public class myFragment3 extends Fragment {
     TextView loadUrl;
     LinearLayout linearLayoutContent;
 
+    public static boolean isWebView = false;
+
     public myFragment3() {
         // Required empty public constructor
     }
@@ -108,6 +110,8 @@ public class myFragment3 extends Fragment {
         loadUrl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                isWebView = true;
 
                 WebSettings webSettings = webView.getSettings();
                 webSettings.setJavaScriptEnabled(true);

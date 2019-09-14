@@ -16,6 +16,8 @@ import com.thedascapital.www.newsapp.Utils.PrefUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.thedascapital.www.newsapp.Fragments.myFragment3.isWebView;
+
 public class NewsDetailsActivity extends AppCompatActivity {
 
     ViewPager viewPager3;
@@ -51,8 +53,9 @@ public class NewsDetailsActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-
-        if (findViewById(R.id.webView).getVisibility() == View.VISIBLE) {
+            //findViewById(R.id.webView).getVisibility() == View.VISIBLE
+        if (isWebView) {
+            isWebView = false;
             findViewById(R.id.webView).setVisibility(View.GONE);
             findViewById(R.id.linearLayoutContent).setVisibility(View.VISIBLE);
             //viewPager3.setCurrentItem(viewPager3.getCurrentItem(),false);

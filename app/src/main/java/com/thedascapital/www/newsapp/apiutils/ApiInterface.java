@@ -17,4 +17,7 @@ public interface ApiInterface {
     @GET("top-headlines")
     Call<News> getNewsCC(@Query("country") String country, @Query("category") String category, @Query("apiKey") String type);
 
+    @GET("everything")
+    Call<News> getEverything(@Query("q") String q, @Query("apiKey") String type);
+
 }
