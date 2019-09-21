@@ -6,6 +6,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 import android.view.View;
 
+import com.ToxicBakery.viewpager.transforms.RotateUpTransformer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.thedascapital.www.newsapp.R;
@@ -49,6 +50,11 @@ public class NewsDetailsActivity extends AppCompatActivity {
         viewPager3.setAdapter(viewPagerAdapter3);
         viewPager3.setCurrentItem(position4);
 
+        // set the card transformer and set reverseDrawingOrder to true, so the fragments are drawn from the right to the left
+        viewPager3.setPageTransformer(true, new CardTransformer(0.7f));// Animation.
+
+        //viewPager3.setPageTransformer(true, new RotateUpTransformer()); //using library
+
     }
 
     @Override
@@ -64,4 +70,29 @@ public class NewsDetailsActivity extends AppCompatActivity {
         }
 
     }
+
+    public class CardTransformer implements ViewPager.PageTransformer {
+
+        private final float scalingStart;
+
+        public CardTransformer(float scalingStart) {
+            super();
+            this.scalingStart = 1 - scalingStart;
+        }
+
+        @Override
+        public void transformPage(View page, float position) {
+
+            if (position >= 0) {
+                final int w = page.getWidth();
+                float scaleFactor = 1 - scalingStart * position;
+
+                page.setAlpha(1 - position);
+                page.setScaleX(scaleFactor);
+                page.setScaleY(scaleFactor);
+                page.setTranslationX(w * (1 - position) - w);
+            }
+        }
+    }
+
 }

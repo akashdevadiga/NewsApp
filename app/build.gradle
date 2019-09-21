@@ -52,6 +52,10 @@ dependencies {
 //Times Formater
     implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
 
+//ViewPager animation Library
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:2.0.24'
+
+
 }
 
 apply plugin: 'com.google.gms.google-services'
